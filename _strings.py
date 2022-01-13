@@ -1,0 +1,6 @@
+print("I am Strings Hi")
+print("I am learning Python in 2022")
+print('Single Quotes')
+print("Double Quotes")
+print('''Triple Quotes''')
+print("What's Up?")
