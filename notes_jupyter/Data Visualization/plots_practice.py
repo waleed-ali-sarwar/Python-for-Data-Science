@@ -13,4 +13,5 @@ graph = my_seaborn.barplot(x='COUNTRY',data= mydata,y ='AGE')
 graph.set_title('Total Student our country | Data Visualization')
 # show graph
 print(mydata)
+
 my_mat.show()

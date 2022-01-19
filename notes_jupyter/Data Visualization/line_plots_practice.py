@@ -1,17 +1,18 @@
 # data visualization
-# practice 
+# practice plots
 
 # data science libraries
 # import libraries
-import seaborn as _seaborn
-import matplotlib.pyplot as _matplot
+import seaborn as s
+import matplotlib.pyplot as m
 
-# selecting a dataset
-my_data = _seaborn.load_dataset('iris')
-
-data_plot = _seaborn.lineplot(x ='sepal_length', y ='sepal_width', data =my_data)
-
-data_plot.set_title('Line Plot | Data Visualization')
-
-_matplot.title('Iris Graph')
-_matplot.show()
+# theme
+s.set_theme(style='ticks',color_codes=True)
+s.set_style('whitegrid')
+# data 
+mydata = s.load_dataset('iris')
+print(mydata)
+m.figure(figsize=(18,8))
+m.title('Iris | Data Visualization')
+graphs = s.lineplot(x='sepal_length',y='sepal_width',data= mydata,hue='species')
+m.show()
